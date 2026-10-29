@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The portfolio of Sathya Sai S, a Computer Science (Data Science) student and problem solver.">
+	<title>Sathya Sai S | Portfolio</title>
+	<style>
+		:root {
+			color-scheme: dark;
+			--bg: #0b1020;
+			--surface: #121a2d;
+			--text: #edf2ff;
+			--muted: #a6b1c8;
+			--accent: #70e1c1;
+			--border: rgba(192, 210, 242, .14);
+		}
+
+		* { box-sizing: border-box; }
+		html { scroll-behavior: smooth; }
+		body {
+			margin: 0;
+			background: radial-gradient(ellipse at 82% 4%, #182b3b 0, transparent 34%), var(--bg);
+			color: var(--text);
+			font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+		}
+		a { color: inherit; }
+		.wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+		header { padding: 24px 0; }
+		nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+		.brand { color: var(--accent); font-weight: 750; letter-spacing: .04em; text-decoration: none; }
+		.nav-links { display: flex; gap: 24px; flex-wrap: wrap; }
+		.nav-links a { color: var(--muted); font-size: .94rem; text-decoration: none; }
+		.nav-links a:hover, .nav-links a:focus-visible { color: var(--accent); }
+
+		.hero { min-height: 66vh; display: grid; align-content: center; padding: 72px 0 90px; }
+		.eyebrow { color: var(--accent); font-size: .82rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+		h1 { max-width: 800px; margin: 14px 0; font-size: clamp(2.8rem, 8vw, 5.7rem); line-height: 1.04; letter-spacing: -.055em; }
+		h1 span { color: var(--accent); }
+		.hero p { max-width: 660px; margin: 12px 0 28px; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.25rem); }
+		.button { display: inline-block; padding: 11px 18px; border: 1px solid var(--accent); border-radius: 7px; color: var(--accent); font-weight: 650; text-decoration: none; transition: background .2s, color .2s; }
+		.button:hover, .button:focus-visible { background: var(--accent); color: var(--bg); }
+
+		section { padding: 62px 0; border-top: 1px solid var(--border); }
+		h2 { margin: 0 0 24px; font-size: clamp(1.8rem, 4vw, 2.5rem); letter-spacing: -.035em; }
+		.about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 44px; align-items: start; }
+		.about-grid p { margin: 0; color: var(--muted); }
+		.highlight { padding: 22px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; }
+		.highlight strong { display: block; color: var(--accent); font-size: 1.6rem; }
+		.highlight span { color: var(--muted); }
+		.skills { display: flex; flex-wrap: wrap; gap: 12px; }
+		.skill { padding: 8px 14px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
+		.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+		.project { padding: 24px; background: linear-gradient(145deg, var(--surface), #101626); border: 1px solid var(--border); border-radius: 12px; }
+		.project h3 { margin: 0 0 10px; font-size: 1.15rem; }
+		.project p { margin: 0; color: var(--muted); }
+		.tag { display: inline-block; margin-top: 18px; color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+		footer { padding: 28px 0; color: var(--muted); font-size: .9rem; }
+
+		@media (max-width: 700px) {
+			.wrap { width: min(100% - 32px, 560px); }
+			nav { align-items: flex-start; flex-direction: column; }
+			.nav-links { gap: 16px; }
+			.hero { min-height: 58vh; padding: 56px 0 70px; }
+			.about-grid, .project-grid { grid-template-columns: 1fr; }
+			section { padding: 48px 0; }
+		}
+		@media (prefers-reduced-motion: reduce) {
+			html { scroll-behavior: auto; }
+			*, *::before, *::after { transition-duration: .01ms !important; }
+		}
+	</style>
+</head>
+<body>
+	<header class="wrap">
+		<nav aria-label="Main navigation">
+			<a class="brand" href="#home">SATHYA SAI S</a>
+			<div class="nav-links">
+				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="hero wrap" id="home">
+			<div class="eyebrow">Computer Science · Data Science</div>
+			<h1>Hi, I'm <span>Sathya Sai S.</span></h1>
+			<p>A third-year Integrated M.Tech Computer Science (Data Science) student with six years of coding experience. I enjoy solving problems and thinking analytically to build useful things.</p>
+			<div><a class="button" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a></div>
+		</div>
+
+		<section id="about">
+			<div class="wrap about-grid">
+				<div>
+					<div class="eyebrow">A little about me</div>
+					<h2>Curious by nature. Analytical by approach.</h2>
+					<p>I'm pursuing my third year in Integrated M.Tech Computer Science, specializing in Data Science. My strengths are problem solving and analytical thinking, backed by six years of hands-on coding experience.</p>
+				</div>
+				<div class="highlight">
+					<strong>6 years</strong>
+					<span>of coding experience</span>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills">
+			<div class="wrap">
+				<div class="eyebrow">Tools I work with</div>
+				<h2>Programming languages</h2>
+				<div class="skills" aria-label="Programming languages">
+					<span class="skill">Java</span>
+					<span class="skill">C</span>
+					<span class="skill">C++</span>
+					<span class="skill">Python</span>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects">
+			<div class="wrap">
+				<div class="eyebrow">Selected work</div>
+				<h2>Projects I've built</h2>
+				<div class="project-grid">
+					<article class="project">
+						<h3>Reinforcement Learning Trading Agent</h3>
+						<p>A production-grade trading agent built around reinforcement learning.</p>
+						<span class="tag">Production grade</span>
+					</article>
+					<article class="project">
+						<h3>Reconnaissance Engine</h3>
+						<p>A production-grade engine designed to support reconnaissance workflows.</p>
+						<span class="tag">Production grade</span>
+					</article>
+					<article class="project">
+						<h3>Smart Home Simulator</h3>
+						<p>A simulator focused on additional safety for smart home environments.</p>
+						<span class="tag">Safety focused</span>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="wrap">© <span id="year">2025</span> Sathya Sai S</footer>
+</body>
+</html>
